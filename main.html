@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Síkidimok</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="szamol.js"></script>
+</head>
+
+<body>
+    <h1 id="cím">Számolások</h1>
+    <div class="container">
+        <div class="row">
+            <div class="p-2 col-md-6 col-lg-3 card">
+                <h1>Rombusz</h1>
+                <img src="rombusz3.svg" alt="rombusz kép" id="kép">
+                <p style="float: left;">M:</p>
+                <input type="number" id="RombuszM" value="1">
+                <p style="float: left;">a:</p>
+                <input type="number" id="RombuszA" value="1">
+                <button type="button" class="btn btn-outline-dark" style="margin-top: 10px;" onclick="SzámolRombusz()">Számolás</button>
+                <div>
+                    <label>Terület:</label>
+                </div>
+                <div>
+                    <input type="text" class="form-control" style="font-weight: bold;" id="RombuszEredmenyTerület" disabled>
+                </div>
+                <div>
+                    <label for="eredmeny" id="">Kerület:</label>
+                </div>
+                <div>
+                    <input type="text" class="form-control" style="font-weight: bold;" id="RombuszEredmenyKerület" disabled>
+                </div>
+            </div>
+            <div class="p-2 col-md-6 col-lg-3 card">
+                <h1>Trapéz</h1>
+                <img src="trapéz.svg" alt="trapéz kép" id="kép2">
+                <p style="float: left;">a:</p>
+                <input type="number" id="TrapézA" value="1">
+                <p style="float: left;">b:</p>
+                <input type="number" id="TrapézB" value="1">
+                <p style="float: left;">c:</p>
+                <input type="number" id="TrapézC" value="1">
+                <p style="float: left;">d:</p>
+                <input type="number" id="TrapézD" value="1">
+                <p style="float: left;">m:</p>
+                <input type="number" id="TrapézM" value="1">
+                <button type="button" class="btn btn-outline-dark" style="margin-top: 10px;" onclick="SzámolTrapéz()">Számolás</button>
+                <div>
+                    <label for="eredmeny" id="">Terület:</label>
+                </div>
+                <div>
+                    <input type="text" class="form-control" style="font-weight: bold;" id="TrapézEredmenyTerület" disabled>
+                </div>
+                <div>
+                    <label>Kerület:</label>
+                </div>
+                <div>
+                    <input type="text" class="form-control" style="font-weight: bold;" id="TrapézEredmenyKerület" disabled>
+                </div>
+            </div>
+            <div class="p-2 col-md-6 col-lg-3 card">
+                <h1>Henger</h1>
+                <img src="henger.svg" alt="trapéz kép" id="kép3">
+                <p style="float: left;">m:</p>
+                <input type="number" id="HengerM" value="1">
+                <p style="float: left;">r:</p>
+                <input type="number" id="HengerR" value="1">
+                <button type="button" class="btn btn-outline-dark" style="margin-top: 10px;" onclick="SzámolHenger()">Számolás</button>
+                <div>
+                    <label>Térfogat:</label>
+                </div>
+                <div>
+                    <input type="text" class="form-control" style="font-weight: bold;" id="HengerEredmenyTérfogat" disabled>
+                </div>
+                <div>
+                    <label>Felszín:</label>
+                </div>
+                <div>
+                    <input type="text" class="form-control" style="font-weight: bold;" id="HengerEredmenyFelszín" disabled>
+                </div>
+            </div>
+            <div class="p-2 col-md-6 col-lg-3 card">
+                <h1>Kúp</h1>
+                <img src="kúp.svg" alt="kúp kép" id="kép4">
+                <p style="float: left;">m:</p>
+                <input type="number" id="kúpM" value="1">
+                <p style="float: left;">r:</p>
+                <input type="number" id="kúpR" value="1">
+                <p style="float: left;">s:</p>
+                <input type="number" id="kúpS" value="1">
+                <button type="button" class="btn btn-outline-dark" style="margin-top: 10px;" onclick="SzámolKúp()">Számolás</button>
+                <div>
+                    <label for="eredmeny" id="">Térfogat:</label>
+                </div>
+                <div>
+                    <input type="text" class="form-control" style="font-weight: bold;" id="KúpEredmenyTérfogat" disabled>
+                </div>
+                <div>
+                    <label for="eredmeny" id="">Felszín:</label>
+                </div>
+                <div>
+                    <input type="text" class="form-control" style="font-weight: bold;" id="KúpEredmenyFelszín" disabled>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p></p>
+</body>
+
+</html>

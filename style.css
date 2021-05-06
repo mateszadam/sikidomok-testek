@@ -1,13 +1,20 @@
 #cím{
     text-align: center;
-    font-weight: 400px;
+    font-weight: 900;
     font-size: 100px;
     color: whitesmoke;
 }
 #kép{
     border-bottom: 20px;
-    max-width: 350px;
-    
+}
+#kép2{
+    border-bottom: 20px;
+}
+#kép3{
+    border-bottom: 20px;
+}
+#kép4{
+    border-bottom: 20px;
 }
 p{
     font-weight: bold;
